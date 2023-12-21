@@ -1,0 +1,100 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.explorer-container {
+  background-color: #333;
+  color: #fff;
+  height: 100vh;
+  width: 400px;
+  position: fixed;
+  overflow-y: auto;
+}
+
+.explorer {
+  padding: 20px;
+}
+
+.file {
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.folder {
+  margin-bottom: 10px;
+}
+
+.folder-header {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 5px;
+}
+
+.folder-icon {
+  color: #007acc; /* Color for folder icon */
+}
+
+.folder-content {
+  margin-left: 10px;
+}
+.action-icon.edit-icon {
+  color: #3498db; /* Change the color to your preferred color */
+  margin-right: 7px; /* Add some right margin for spacing */
+  margin-left: 7px;
+}
+
+/* Delete icon styling */
+.action-icon.delete-icon {
+  color: #e74c3c; /* Change the color to your preferred color */
+  margin-right: 5px; /* Add some right margin for spacing */
+}
+
+/* Add icon styling */
+.action-icon.add-icon {
+  color: #2ecc71; /* Change the color to your preferred color */
+  margin-right: 5px; /* Add some right margin for spacing */
+}
